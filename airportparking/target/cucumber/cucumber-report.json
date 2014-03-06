@@ -1,0 +1,58 @@
+[
+  {
+    "id": "valet-parking",
+    "description": "As a traveler\nIn order to determine where to park my car\nI want to know the cost of valet parking",
+    "name": "Valet Parking",
+    "keyword": "Feature",
+    "line": 1,
+    "elements": [
+      {
+        "id": "valet-parking;calculate-valet-parking-cost-for-half-an-hour",
+        "description": "",
+        "name": "Calculate valet parking cost for half an hour",
+        "keyword": "Scenario",
+        "line": 6,
+        "steps": [
+          {
+            "result": {
+              "duration": 1640179000,
+              "status": "pending",
+              "error_message": "cucumber.api.PendingException: TODO: implement me\n\tat com.bdd.airportparking.ValetParkingSteps.I_park_my_car_in_the_Valet_Parking_for_minutes(ValetParkingSteps.java:15)\n\tat ✽.When I park my car in the Valet Parking for 30 minutes(ValetParking.feature:7)\n"
+            },
+            "name": "I park my car in the Valet Parking for 30 minutes",
+            "keyword": "When ",
+            "line": 7,
+            "match": {
+              "arguments": [
+                {
+                  "val": "30",
+                  "offset": 39
+                }
+              ],
+              "location": "ValetParkingSteps.I_park_my_car_in_the_Valet_Parking_for_minutes(int)"
+            }
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "name": "I will have to pay $12",
+            "keyword": "Then ",
+            "line": 8,
+            "match": {
+              "arguments": [
+                {
+                  "val": "12",
+                  "offset": 20
+                }
+              ],
+              "location": "ValetParkingSteps.I_will_have_to_pay_$(int)"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "uri": "ValetParking.feature"
+  }
+]
